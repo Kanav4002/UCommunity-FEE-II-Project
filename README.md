@@ -28,24 +28,24 @@ This project presents an innovative web-based solution designed to connect colle
 Table of Contents
 
 	1.	Introduction
-	1.	Background
-	2.	Objectives
-	3.	Significance
+	•	Background
+	•	Objectives
+	•	Significance
 	2.	Problem Definition and Requirements
-	1.	Problem Statement
-	2.	Software Requirements
-	3.	Hardware Requirements
-	4.	Data Sets
+	•	Problem Statement
+	•	Software Requirements
+	•	Hardware Requirements
+	•	Data Sets
 	3.	Proposed Design / Methodology
-	1.	Overall Architecture
-	2.	User Interface Design
-	3.	Key Features and Algorithms
-	4.	Theme Implementation (Dark and Light Mode)
+	•	Overall Architecture
+	•	User Interface Design
+	•	Key Features and Algorithms
+	•	Theme Implementation (Dark and Light Mode)
 	4.	Results
-	1.	User Interface
-	2.	Feature Demonstration
-	3.	User Feedback
-	4.	Performance Metrics
+	•	User Interface
+	•	Feature Demonstration
+	•	User Feedback
+	•	Performance Metrics
 	5.	References
 	6.	Technologies Used
 
