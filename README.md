@@ -4,31 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCommunity-FEE-II-Project README</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-        }
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        h2 {
-            font-size: 16px;
-            font-weight: bold;
-        }
-        h3 {
-            font-size: 14px;
-            font-weight: bold;
-        }
-        p {
-            font-size: 12px;
-            text-align: justify;
-            line-height: 1.5;
-        }
-        ul {
-            font-size: 12px;
-        }
-    </style>
 </head>
 <body>
 
