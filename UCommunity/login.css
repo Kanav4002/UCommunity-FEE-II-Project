@@ -1,105 +1,17 @@
-:root {
-  --background-light: rgb(240, 244, 249);
-  --background-dark: rgb(33, 37, 41);
-}
-body{
-  background-color: var(--background-light);
-  object-fit: cover;
-  object-position: center;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--background-dark);
-  }
-  
-} *//* Base styles
-body {
-  font-family: Satoshi, sans-serif;
-  background-color: var(--background-light);
-  color: var(--text-light);
+ *{
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  box-sizing: border-box;
+  font-family: Satoshi, sans-serif;
+ }
+body{
+  object-fit: cover;
+  object-position: center;
+  background-image: url('/assets/backgrounds/wp2406611.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-.container {
-  width: 90%;
-  max-width: 400px;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  text-align: center;
-}
-
-.heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #FF0000;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-.mail, .mail-link, .copyright {
-  font-size: 1rem;
-  color: #888888;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-.forgot-password:active {
-  color: #FF0000;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .heading {
-    font-size: 2rem;
-  }
-
-  p, .mail, .mail-link, .copyright {
-    font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .heading {
-    font-size: 1.5rem;
-  }
-
-  p, .mail, .mail-link, .copyright {
-    font-size: 0.75rem;
-  }
-}
-
-/* Dark theme styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--background-dark);
-    color: var(--text-dark);
-  }
-
-  p, .mail, .mail-link, .copyright {
-    color: var(--text-dark);
-  }
-}
-
 p{
   font-family: Satoshi, sans-serif;
   text-align: center;
@@ -108,7 +20,7 @@ p{
   line-height: 1.5;
 }
 .heading{
-  font-size: 103px;
+  font-size: 10vw;
   font-weight: Bold;
   color: #FF0000;
   text-align: center;
@@ -120,6 +32,7 @@ p{
   text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.4);
 }
 .title{
+  color: wheat;
   font-size: 32px;
   font-weight: Bold;
   text-align: center;
@@ -132,7 +45,7 @@ p{
 }
 .tagline{
   font-size: 18px;
-  color: #888888;
+  color: white;
   margin-top: 0;
   margin-bottom: 0;
   text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
@@ -146,6 +59,7 @@ p{
   width: 100%;
 }
 .username, .password{
+  font-weight: medium;
   display: block;
   margin-top: 10px;
   padding-top: 15px;
@@ -154,17 +68,16 @@ p{
   width: 325px;
   border: none;
   border-radius: 10px;
-  background-color: #e6e6e6;
-  color: #999999;
+  background-color: white;
+  color: black;
 }
 .select-campus{
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 18px;
   font-weight: medium;
-  color: #888888;
+  color: white;
   text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
-
 }
 .choose-campus{
   display: block;
@@ -175,8 +88,8 @@ p{
   width: 337px;
   border: none;
   border-radius: 10px;
-  background-color: #e6e6e6;
-  color: #999999;
+  background-color: white;
+  color: black;
 }
 .submit{
   font-size: 18px;
@@ -197,7 +110,7 @@ p{
   opacity: 0.8;
 }
 .submit:hover{
-  background-color: rgb(87, 87, 87);
+  background-color: rgb(148, 148, 148);
   color: black;
 }
 .forgot-password-parent{
@@ -206,7 +119,7 @@ p{
 }
 .forgot-password{
   font-size: 18px;
-  color: #888888;
+  color: white;
   transition: color 0.15s;
 }
 .forgot-password:hover{
@@ -218,7 +131,7 @@ p{
 }
 .mail{
   font-size: 18px;
-  color: #888888;
+  color: white;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -235,7 +148,34 @@ p{
   margin-bottom: 0;
   font-size: 20px;
   font-weight: bold;
-  color: #888888;
+  color: white;
   text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
 
+}
+input.username-input,
+input.password-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  input.username-input,
+  input.password-input {
+    max-width: 300px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  input.username-input,
+  input.password-input {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
 }
