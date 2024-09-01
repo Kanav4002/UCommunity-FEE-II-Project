@@ -1,181 +1,137 @@
- *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Satoshi, sans-serif;
- }
-body{
-  object-fit: cover;
-  object-position: center;
-  background-image: url('/assets/backgrounds/wp2406611.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-p{
-  font-family: Satoshi, sans-serif;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-.heading{
-  font-size: 10vw;
-  font-weight: Bold;
-  color: #FF0000;
-  text-align: center;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 50px;
-  margin-bottom: 0;
-  line-height: 1.2;
-  text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.4);
-}
-.title{
-  color: wheat;
-  font-size: 32px;
-  font-weight: Bold;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  line-height: 1.3;
-  text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
-
-}
-.tagline{
-  font-size: 18px;
-  color: white;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
-}
-.login-form{
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.username, .password{
-  font-weight: medium;
-  display: block;
-  margin-top: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  width: 325px;
-  border: none;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-}
-.select-campus{
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: medium;
-  color: white;
-  text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
-}
-.choose-campus{
-  display: block;
-  margin-top: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  width: 337px;
-  border: none;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-}
-.submit{
-  font-size: 18px;
-  font-weight: bold;
-  width: 337px;
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-radius: 10px;
-  border: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  transition: color 0.15s, background-color 0.15s, opacity 0.15s;
-}
-.submit:active{
-  opacity: 0.8;
-}
-.submit:hover{
-  background-color: rgb(148, 148, 148);
-  color: black;
-}
-.forgot-password-parent{
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-.forgot-password{
-  font-size: 18px;
-  color: white;
-  transition: color 0.15s;
-}
-.forgot-password:hover{
-  color: #FF0000;
-  cursor: pointer;
-}
-.forgot-password:active{
-  color: #FF0000;
-}
-.mail{
-  font-size: 18px;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.mail-send{
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.mail-link{
-  font-size: 18px;
-  color: red;
-}
-.copyright{
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
-
-}
-input.username-input,
-input.password-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 10px auto;
-  display: block;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-@media (max-width: 768px) {
-  input.username-input,
-  input.password-input {
-    max-width: 300px;
-    font-size: 0.9rem;
-  }
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/CUB4-Top-10-reasons-why-Chitkara-University-is-the-best-University-in-North-India.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0; 
+    animation: fadeIn 1.5s ease forwards; 
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    color: red;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+}
+
+.textbox {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    background-color: #f4f4f4;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.textbox input:focus {
+    background-color: #fff;
+    border-color: #aaa;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, red, darkred);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, darkred, red);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
 }
 
 @media (max-width: 480px) {
-  input.username-input,
-  input.password-input {
-    max-width: 100%;
-    font-size: 0.8rem;
-  }
+    .login-box {
+        padding: 30px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .textbox input {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
