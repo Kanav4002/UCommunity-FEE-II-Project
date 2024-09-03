@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   padding-top: 3rem;
@@ -540,29 +543,20 @@ body {
   background-color: rgba(151, 202, 209, 0.2);
 }
 
-.up-coming-event-section{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 5rem;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
 
 .up-coming-event-section {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 9.375rem;
+  margin-top: 4rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
 @media (max-width: 1200px) {
   .up-coming-event-section {
-    margin-top: 7.5rem;
+    margin-top: 4rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -572,7 +566,7 @@ body {
   .up-coming-event-section {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 6rem;
+    margin-top: 4rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -580,7 +574,7 @@ body {
 
 @media (max-width: 768px) {
   .up-coming-event-section {
-    margin-top: 4.5rem;
+    margin-top: 4rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
@@ -590,7 +584,7 @@ body {
   .up-coming-event-section {
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
@@ -1037,7 +1031,6 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Contact Us Section */
 .contact-us-form-section {
   background-image: url("assets/backgrounds/wp2406611.webp");
   object-fit: cover;
@@ -1338,6 +1331,10 @@ body {
   background-color: rgb(235, 235, 235);
 }
 
+.sidebar-link a{
+  text-decoration: none;
+  color: black;
+}
 
 @media (max-width: 768px) {
   .sidebar {
@@ -1360,3 +1357,4 @@ body {
     top: 14.5rem;
   }
 }
+
