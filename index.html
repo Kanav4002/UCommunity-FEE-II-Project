@@ -38,16 +38,16 @@
 
   <nav class="sidebar">
     <div class="sidebar-link">
-      <div>Home</div>      
+      <a href="#home-section">Home</a>
+    </div>      
+    <div class="sidebar-link">
+      <a href="#group-section">Groups</a>
     </div>
     <div class="sidebar-link">
-      <div>Groups</div>  
+      <a href="#event-section">Events</a>
     </div>
     <div class="sidebar-link">
-      <div>Events</div>
-    </div>
-    <div class="sidebar-link">
-      <div>Topics</div>
+      <a href="#topic-section">Topics</a>
     </div>
     <div class="sidebar-link">
       <div>Profile</div>
@@ -57,7 +57,7 @@
     </div>
   </nav>
 
-  <main class="hero-section">
+  <main class="hero-section" id="home-section">
     <section class="main-section">
       <div class="welcome-container">
         <div class="welcome-text">
@@ -74,7 +74,7 @@
       </div>
     </section>
 
-    <section class="event-section">
+    <section class="event-section" id="event-section">
       <div class="event-left-section">
         <div class="event-text">
           Events Near
@@ -368,7 +368,7 @@
       </div>
     </section>
 
-    <section class="explore-category-section">
+    <section class="explore-category-section" id="topic-section">
       <div class="explore-category-section-text">
         Explore top categories
       </div>
@@ -477,7 +477,7 @@
       </div>
     </section>
 
-    <section class="how-ucommunity-section">
+    <section class="how-ucommunity-section" id="group-section">
       <div class="how-ucommunity-text">
         How UCommunity works
       </div>
@@ -542,7 +542,7 @@
       </div>
     </section>
 
-    <section class="contact-us-form-section">
+    <section class="contact-us-form-section" id="contact-section">
       <div class="contact-us-form">
         <div class="contact-us-heading">
           Contact Us
@@ -576,7 +576,7 @@
         UCommunity
       </div>
       <div class="cta-button">
-        <a href="#" class="get-started-button">Get Started</a>
+        <a href="./signup.html" class="get-started-button">Get Started</a>
       </div>
     </div>
 
@@ -584,24 +584,24 @@
       <div class="footer-column">
           <h3>Your Account</h3>
           <ul>
-              <li><a href="#">Sign up</a></li>
-              <li><a href="#">Log in</a></li>
+              <li><a href="./signup.html">Sign up</a></li>
+              <li><a href="./login.html">Log in</a></li>
               <li><a href="#">Help</a></li>
           </ul>
       </div>
       <div class="footer-column">
           <h3>Discover</h3>
           <ul>
-              <li><a href="#">Groups</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Topics</a></li>
+              <li><a href="#group-section">Groups</a></li>
+              <li><a href="#event-section">Events</a></li>
+              <li><a href="#topic-section">Topics</a></li>
           </ul>
       </div>
       <div class="footer-column">
           <h3>UCommunity</h3>
           <ul>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#contact-section">Contact Us</a></li>
               <li><a href="#">Blog</a></li>
           </ul>
       </div>
