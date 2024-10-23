@@ -14,16 +14,48 @@
                 <img src="assets/images/chitkara_university_logo_freelogovectors.net_.png" alt="Chitkara University Logo" class="logo">
                 <p class="title">Welcome to Chitkara University</p>
             </div>
-            <form>
+            <form id="loginForm">
                 <div class="textbox">
-                    <input type="email" placeholder="E-mail" name="E-mail">
+                    <input type="email" placeholder="E-mail" name="E-mail" id="email">
                 </div>
                 <div class="textbox">
-                    <input type="password" placeholder="password" name="password">
+                    <input type="password" placeholder="Password" name="password" id="password">
                 </div>
                 <button type="submit" class="btn">Login</button>
             </form>
         </div>
     </div>
+
+    <script>
+       
+        const loginForm = document.getElementById('loginForm');
+        
+        
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+           
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            
+            if (password === '') {
+                alert('Password is required.');
+                return;
+            }
+
+           
+            alert('Login successful!');
+
+            
+        });
+    </script>
 </body>
 </html>
