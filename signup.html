@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
     <link rel="stylesheet" href="signup.css">
-    <title>SignUp page</title>
 </head>
 <body>
     <div class="container">
@@ -14,9 +14,9 @@
             <p class="title">Welcome to Chitkara</p>
         </div>
         <form class="signup" action="">
-            <input class ="Username" type="text" name ="Student Name" placeholder="Studentname">
-            <input class ="Email" type="email" name ="Email" placeholder="Email">
-            <input class ="Password" type="password" name ="Password" placeholder="Password">
+            <input class="Username" type="text" name="Student Name" placeholder="UserName">
+            <input class="Email" type="email" name="Email" placeholder="Email">
+            <input class="Password" type="password" name="Password" placeholder="Password">
             <p class="slect campus">Choose Campus</p>
             <select class="campus" name="campus">
                 <option value="Chitkara University, Punjab">Chitkara University, Punjab</option>
@@ -28,5 +28,41 @@
             </p>
         </form>
     </div>
+
+    
+    <script>
+        document.querySelector(".signup").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            const username = document.querySelector(".Username").value;
+            const email = document.querySelector(".Email").value;
+            const password = document.querySelector(".Password").value;
+            const campus = document.querySelector(".campus").value;
+
+            
+            if (username === "" || email === "" || password === "" || campus === "") {
+                alert("All fields are required!");
+                return;
+            }
+
+            
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address!");
+                return;
+            }
+
+            
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long!");
+                return;
+            }
+
+            
+            alert("Sign up successful!");
+            
+            this.submit();
+        });
+    </script>
 </body>
 </html>
