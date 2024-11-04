@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html{
+  scroll-padding-top: 5rem;
+  scroll-padding-bottom: 5rem;
   scroll-behavior: smooth;
 }
 
@@ -14,6 +17,7 @@ body {
   font-family: Chivo, Arial;
   overflow-x: hidden;
 }
+
 
 @media (max-width: 768px) {
   body {
@@ -296,6 +300,11 @@ body {
   padding: 0.5rem 1rem;
 }
 
+.join-meet-button a{
+  color: white;
+  text-decoration: none;
+}
+
 .join-meet-button:hover {
   background-color: rgb(1, 140, 164);
 }
@@ -521,14 +530,17 @@ body {
 }
 
 .event-time-place,
-.event-people {
+.event-people{
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 0.875rem;
   color: #00798A;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   margin: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.15s;
 }
 
 .event-time-place i,
@@ -539,7 +551,27 @@ body {
 }
 
 .event-time-place:hover,
-.event-people:hover {
+.event-people:hover{
+  background-color: rgba(151, 202, 209, 0.2);
+}
+
+.event-join-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-event-join-btn{
+  color: #00798A;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.js-event-join-btn:hover{
   background-color: rgba(151, 202, 209, 0.2);
 }
 
@@ -688,7 +720,7 @@ body {
   margin-left: 1.25rem;
 }
 
-.join-meetup-signup-button {
+.join-meetup-signup-button{
   background-color: rgb(227, 35, 89);
   border: none;
   color: white;
@@ -702,6 +734,11 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.15s;
+}
+
+.join-meetup-signup-button a{
+  text-decoration: none;
+  color: white;
 }
 
 .join-meetup-signup-button:hover {
@@ -966,6 +1003,7 @@ body {
   }
 }
 
+
 .carousel-section {
   margin-top: 4rem;
   width: 95%;
@@ -1015,7 +1053,6 @@ body {
   justify-content: space-between;
   transform: translateY(-50%);
 }
-
 .control-prev,
 .control-next {
   background-color: rgba(0, 0, 0, 0.5);
@@ -1029,6 +1066,81 @@ body {
 .control-prev:hover,
 .control-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.comment-section{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-section h3{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.comment-section input{
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.comment-section #add-comment{
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
+#update-button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #444;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#update-button:active{
+  background-color: #5f5f5f;
+}
+
+#remove-comments-button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #444;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#remove-comments-button:active{
+  background-color: #5f5f5f;
+}
+
+.comment{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#comment-list{
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 1rem;
 }
 
 .contact-us-form-section {
@@ -1339,7 +1451,7 @@ body {
 @media (max-width: 768px) {
   .sidebar {
     width: 5rem;
-    top: 13.5rem;
+    top: 13.05rem;
   }
 
   .sidebar-link {
@@ -1354,7 +1466,7 @@ body {
 
 @media (max-width: 430px){
   .sidebar {
-    top: 14.5rem;
+    top: 14.1rem;
   }
 }
 
