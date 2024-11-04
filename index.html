@@ -67,7 +67,7 @@
         <div class="welcome-text-about">
           Whatever your interest, from hiking and reading to networking and skill sharing, there are thousands of people who share it on UCommunity. Events are happening every day—sign up to join the fun
         </div>
-        <button class="join-meet-button">Join UCommunity</button>
+        <button class="join-meet-button"><a href="./signup.html">Join UCommunity</a></button>
       </div>
       <div class="cycle-image">
         <img class="main-image" src="assets/images/irl_event.svg" alt="">
@@ -94,7 +94,7 @@
 
     <section class="event-section-grid">
       <div class="event-preview">
-        <img class="event-picture" src="/assets/images/event_522791664.webp" alt="">
+        <img class="event-picture" src="assets/images/event_522791664.webp" alt="">
         <div class="event-title">
           IIT Delhi Startup Networking Event (Invite Only) by AY Ventures
         </div>
@@ -111,10 +111,17 @@
           <i class="fa-solid fa-ticket"></i>
           FREE
         </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
+        </div>
       </div>
 
       <div class="event-preview">
-        <img class="event-picture" src="/assets/images/event_522445764.webp" alt="">
+        <img class="event-picture" src="assets/images/event_522445764.webp" alt="">
         <div class="event-title">
           Easyruns 3K Run | Run - walk
         </div>
@@ -131,10 +138,17 @@
           <i class="fa-solid fa-ticket"></i>
           FREE
         </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
+        </div>
       </div>
 
       <div class="event-preview">
-        <img class="event-picture" src="/assets/images/event_517134095.webp" alt="">
+        <img class="event-picture" src="assets/images/event_517134095.webp" alt="">
         <div class="event-title">
           Kashmir Backpacking Trip (6D/5N)
         </div>
@@ -151,10 +165,17 @@
           <i class="fa-solid fa-ticket"></i>
           FROM ₹ 21,450.00
         </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
+        </div>
       </div>
 
       <div class="event-preview">
-        <img class="event-picture" src="/assets/images/event_522259491.webp" alt="">
+        <img class="event-picture" src="assets/images/event_522259491.webp" alt="">
         <div class="event-title">
           Tirthan Valley- A refreshing gateway
         </div>
@@ -171,9 +192,15 @@
           <i class="fa-solid fa-ticket"></i>
           FREE
         </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
+        </div>
       </div>
     </section>
-
 
     <section class="up-coming-event-section">
       <div class="event-left-section">
@@ -191,7 +218,7 @@
 
     <section class="event-section-grid">
       <div class="event-preview">
-        <img class="event-picture" src="/assets/images/event_522579427.webp" alt="">
+        <img class="event-picture" src="assets/images/event_522579427.webp" alt="">
         <div class="event-title">
           5-day AI Challenge: Land Your First Client in 5 Days For Free!
         </div>
@@ -207,6 +234,13 @@
           41 going 
           <i class="fa-solid fa-ticket"></i>
           FREE
+        </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
         </div>
       </div>
 
@@ -228,10 +262,17 @@
           <i class="fa-solid fa-ticket"></i>
           FREE
         </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
+        </div>
       </div>
 
       <div class="event-preview">
-        <img class="event-picture" src="/assets/images/event_516966945.webp" alt="">
+        <img class="event-picture" src="assets/images/event_516966945.webp" alt="">
         <div class="event-title">
           Helping and Scaling Businesses through Online Marketing
         </div>
@@ -248,10 +289,17 @@
           <i class="fa-solid fa-ticket"></i>
           FREE
         </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
+        </div>
       </div>
 
       <div class="event-preview">
-        <img class="event-picture" src="/assets/images/event_522657837.webp" alt="">
+        <img class="event-picture" src="assets/images/event_522657837.webp" alt="">
         <div class="event-title">
           [DEL] Athena Founders Ask Me Anything with Rob Liu
         </div>
@@ -268,6 +316,13 @@
           <i class="fa-solid fa-ticket"></i>
           FREE
         </div>
+        <div class="event-join-container">
+          <button class="js-event-join-btn" onclick="
+              join();
+            ">
+            Join
+          </button>
+        </div>
       </div>
     </section>
 
@@ -277,10 +332,12 @@
           Join UCommunity
         </div>
         <div class="join-meetup-about">
-          People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.
+          People use Ucommunity to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.
         </div>
         <div>
-          <button class="join-meetup-signup-button">Sign Up</button>
+          <button class="join-meetup-signup-button">
+            <a href="./signup.html">Sign Up</a>
+          </button>
         </div>
       </div>
       <div class="join-meetup-image-container">
@@ -361,14 +418,14 @@
 
       <div class="popular-block-grid">
         <div class="popular-block-preview">
-          <img class="popular-block-picture" src="assets/images/new_york.webp" alt="">
+          <img class="popular-block-picture" src="/assets/images/new_york.webp" alt="">
           <div class="popular-block-place">
             Fleming Block
           </div>
         </div>
 
         <div class="popular-block-preview">
-          <img class="popular-block-picture" src="assets/images/new_york.webp" alt="">
+          <img class="popular-block-picture" src="/assets/images/new_york.webp" alt="">
           <div class="popular-block-place">
             Picasso Block
           </div>
@@ -449,6 +506,23 @@
           <div class="carousel-slide">
             <h2>Featured Reviews</h2>
             <p>Read and write reviews about events and places around your college.</p>
+
+
+            <div class="comment-section">
+              <label for="name-input" class="comment">Name: </label>
+              <input type="text" id="name-input" placeholder="Your Name">
+              <br>
+              <label for="add-comment" class="comment">Review: </label>
+              <textarea id="add-comment" placeholder="Enter comment: "></textarea>
+              <br>
+              <button id="update-button">Comment</button>
+              <button id="remove-comments-button">Remove All Comments</button>
+              
+              <h3>Comments:</h3>
+              <ul id="comment-list"></ul>
+            </div>
+
+
           </div>
           <div class="carousel-slide">
             <h2>Tips for Success</h2>
@@ -546,5 +620,7 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://apis.google.com/js/api.js"></script>
 </body>
 </html>
